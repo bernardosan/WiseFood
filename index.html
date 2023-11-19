@@ -16,7 +16,7 @@
 <body>
 
     <header class="header">
-        <img class="logo" alt="Omnifood logo" src="img/omnifood-logo.png" />
+        <p class="logo" alt="Foodwise logo">WISEF<span>OO</span>&nbsp;D</p>
         <nav class="main-nav">
             <ul class="main-nav-list">
                 <li><a class="main-nav-link" href="#">Section</a></li>
@@ -64,6 +64,20 @@
             </div>
         </section>
 
+
+        <section class="section-featured">
+            <div class="container">
+                <h2 class="heading-featured-in"> As featured in</h2>
+                <div class="logos">
+                    <img src="img/logos/techcrunch.png" alt="Techcrunch logo">
+                    <img src="img/logos/business-insider.png" alt="Business Insider logo">
+                    <img src="img/logos/the-new-york-times.png" alt="The New York times logo">
+                    <img src="img/logos/forbes.png" alt="Forbes logo">
+                    <img src="img/logos/usa-today.png" alt="usa-today logo">
+                </div>
+            </div>
+        </section>
+
         <section class="section-how container">
             <div class="container">
                 <span class="subheading">How it works</span>
@@ -75,7 +89,7 @@
                 <div class="step-text-box">
                     <p class="step-number">01</p>
                     <h3 class="heading-tertiary">
-                        Tell us what you like (and what not): 
+                        Tell us what you like (and what not):
                     </h3>
                     <p class="step-description">
                         Never again waste time thinking about what to eat! Omnifood AI
@@ -88,8 +102,7 @@
                         alt="Iphone app preferences selection screen" />
                 </div>
                 <div class="step-img-box">
-                    <img src="img/app/app-screen-2.png" class="step-img"
-                        alt="Iphone app meal approving plan" />
+                    <img src="img/app/app-screen-2.png" class="step-img" alt="Iphone app meal approving plan" />
                 </div>
                 <!-- STEP 02 -->
                 <div class="step-text-box">
@@ -98,7 +111,8 @@
                         Approve your weekly meal plan:
                     </h3>
                     <p class="step-description">
-                        Once per week, approve the meal plan generated for you by Omnifood AI. You can change ingredients, swap entire meals, or even add your own recipes.
+                        Once per week, approve the meal plan generated for you by Omnifood AI. You can change
+                        ingredients, swap entire meals, or even add your own recipes.
                     </p>
                 </div>
                 <!-- STEP 03 -->
@@ -108,17 +122,83 @@
                         Receive meals at convenient time:
                     </h3>
                     <p class="step-description">
-                        Best chefs in town will cook your selected meal every day, and we will deliver it to your door whenever works best for you. You can change delivery schedule and address daily!
+                        Best chefs in town will cook your selected meal every day, and we will deliver it to your door
+                        whenever works best for you. You can change delivery schedule and address daily!
                 </div>
                 <div class="step-img-box">
-                    <img src="img/app/app-screen-3.png" class="step-img"
-                        alt="Iphone app delivery screen" />
+                    <img src="img/app/app-screen-3.png" class="step-img" alt="Iphone app delivery screen" />
                 </div>
-                
+
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <span class="subheading">Meals</span>
+                <h2 class="heading-secondary">Omnifood AI chooses from 5,000+ recipes</h2>
+
+                <div class="container grid grid--3cols">
+                    <div class="meal">
+                        <img src="img/meals/meal-1.jpg" class="meal-img" alt="Japanese Gyozas">
+                        <div class="meal-content">
+                            <div class="meal-tags"><span class="tag tag--vegetarian">Vegetarian</span></div>
+                            <p class="meal-title">Japanese Gyozas</p>
+
+                            <ul class="meal-attributes">
+                                <li class="meal-attribute">
+                                    <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                                    <span><strong>650</strong> calories</span>
+                                </li>
+                                <li class="meal-attribute">
+                                    <ion-icon class="meal-icon" name="restaurant-outline"></ion-icon>
+                                    <span>NutriScore&reg; <strong>74</strong> </span>
+                                </li>
+                                <li class="meal-attribute">
+                                    <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                                    <span><strong>4.9</strong> rating (537)</span>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="meal">
+                        <img src="img/meals/meal-2.jpg" class="meal-img" alt="Avocado Salad">
+                        <div class="meal-content">
+                            <div class="meal-tags">
+                                <span class="tag tag--vegan">Vegan</span>
+                                <span class="tag tag--paleo">Paleo</span>
+                            </div>
+                            <p class="meal-title">Avocado Salad</p>
+
+                            <ul class="meal-attributes">
+                                <li class="meal-attribute">
+                                    <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                                    <span><strong>400</strong> calories</span>
+                                </li>
+                                <li class="meal-attribute">
+                                    <ion-icon class="meal-icon" name="restaurant-outline"></ion-icon>
+                                    <span>NutriScore&reg; <strong>92</strong> </span>
+                                </li>
+                                <li class="meal-attribute">
+                                    <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                                    <span><strong>4.8</strong> rating (441)</span>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="list">List of diets</div>
+                </div>
             </div>
         </section>
 
     </main>
 </body>
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </html>

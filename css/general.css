@@ -74,6 +74,9 @@ body{
     color: #555;
 }
 
+strong{
+    font-weight: 700;
+}
 
 /*******************************/
 /* GENERAL COMPONENTS */
@@ -167,10 +170,6 @@ body{
     display: grid;
     row-gap: 9.6rem;
     column-gap: 6.4rem;
-}
-
-.grid--center-v{
-    align-items: center;
 }
 
 .grid--2cols{
