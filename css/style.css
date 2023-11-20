@@ -512,3 +512,30 @@
     line-height: 1.8;
 
 }
+
+/*******************************/
+/* SECTION CALL-TO-ACTION*/
+/*******************************/
+
+.section-cta{
+    padding: 4.8rem 0 9.6rem 0;
+}
+
+.cta{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #e67e22;
+    box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.15);
+    background-image: linear-gradient(to right bottom, #ef9f59, #e67e22);
+    border-radius: 11px;
+    justify-content: center;
+    overflow: hidden;
+    height: 50rem;
+}
+
+.cta-img-box{
+    background-image: linear-gradient(to right bottom, rgba(235,135,78,0.35),  rgba(230,125,34,0.35)), 
+    url("../img/eating.jpg");
+    background-size: cover;
+    background-position: center;
+}
