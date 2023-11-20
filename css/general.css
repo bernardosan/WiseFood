@@ -208,10 +208,19 @@ strong{
     color: #e67e22;
 }
 
+.not-included{
+    text-decoration: line-through;
+    color: #ccc;
+}
+
 .grid{
     display: grid;
     row-gap: 9.6rem;
     column-gap: 6.4rem;
+}
+
+.grid:not(:last-child){
+    margin-bottom: 9.6rem;
 }
 
 .grid--2cols{
