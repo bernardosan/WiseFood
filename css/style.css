@@ -524,7 +524,7 @@
 /*******************************/
 
 .section-cta{
-    padding: 4.8rem 0 9.6rem 0;
+    padding: 4.8rem 0 12.8rem 0;
 }
 
 .cta{
@@ -602,3 +602,101 @@
     outline: none;
     box-shadow: 0 0 0 0.8rem #fdf2e97d;
 }
+
+
+/*******************************/
+/* Footer */
+/*******************************/
+
+
+.footer{
+    padding: 12.8rem 0;
+    border-top: 1px solid #eee;
+
+}
+
+.grid--footer{
+    grid-template-columns: 1.7fr 1.7fr 1fr 1fr 1fr;
+}
+
+.footer-logo {
+    display: block;
+    margin-bottom: 3.2rem;
+    width: 100%;
+}
+
+.logo-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.social-links ion-icon{
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+.footer-heading{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 4rem;
+}
+
+.address-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts{
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #767676;
+
+}
+
+.contacts-link{
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #767676;
+    margin-top: auto;
+}
+
+
+.footer-nav{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #767676;
+    transition: all 0.1s;
+}
+
+.footer-link:hover,
+.footer-link:active,
+.footer-link:focus{
+    box-shadow: 0 2px 0 #555; 
+    color: #333;
+}
+
+.social-links{
+    display: flex;
+    list-style: none;
+    gap: 2.4rem;
+
+}
+
+.copyright{
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #767676;
+    margin-top: auto;
+}
+
+
