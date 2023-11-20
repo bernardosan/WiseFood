@@ -29,6 +29,12 @@
     letter-spacing: -0.75rem;
 }
 
+.logo-link:link,
+.logo-link:visited{
+    text-decoration: none;
+    user-select: none;
+}
+
 
 .main-nav-list{
     list-style: none;
