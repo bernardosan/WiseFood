@@ -324,25 +324,6 @@
     transform: translateY(-1rem);
 }
 
-.list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 1.6rem;
-}
-
-.list-item{
-    display: flex;
-    font-size: 1.8rem;
-    align-items: center;
-    gap: 1.6rem;
-}
-
-.list-icon{
-    width: 3rem;
-    height: 3rem;
-    color: #e67e22;
-}
 
 .all-recipes {
     text-align: center;
@@ -413,4 +394,82 @@
 }
 
 
+/*******************************/
+/* SECTION PRICING*/
+/*******************************/
 
+
+.section-pricing{
+    padding: 9.6rem 0;
+}
+
+.pricing-plan{
+    border-radius: 11px;
+    padding: 4.8rem;
+    width: 75%;
+}
+
+.pricing-plan--starter{
+    justify-self: end;
+    box-shadow: 0 0 0 2px #fdf2e9 inset;
+}
+
+.pricing-plan--complete{
+    background-color: #fdf2e9;
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-plan--complete::after{
+    content: "Best Value";
+
+    position: absolute;
+    top:6%;
+    right:-23%;
+
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+    background-color: #ffd43b;
+    color: #333;
+    padding: 0.8rem 8rem;
+    transform: rotate(45deg);
+}
+
+.plan-header{
+    text-align: center;
+    margin-bottom: 4.8rem;
+}
+
+.plan-name{
+    color: #cf711f;
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.075rem;
+    margin-bottom: 3.2rem;
+}
+
+.plan-price{
+    font-size: 6.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.6rem;
+}
+
+.plan-text{
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #6f6f6f;
+}
+
+.plan-price span{
+    font-size: 3rem;
+    font-weight: 500;
+    margin-right: .8rem;
+}
+
+.plan-sign-up{
+    text-align: center;
+    margin-top: 4.8rem;
+}
