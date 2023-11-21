@@ -130,4 +130,63 @@ Instead, 1rem = 1em = 16px*/
     .footer{
         padding: 8rem 0;
     }
+
+    
+    .btn-mobile-nav{
+        display: block;
+    }
+
+    .main-nav{
+        background-color: rgba(255, 255, 255, 0.95);
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(100%);
+        transition: all 0.5s ease-in;
+
+        /* Hide navigation  */
+        /* only display: none dont allow transions */
+        /* 1) hide visually*/
+        opacity: 0;
+        /* 2) non-focusable */
+        pointer-events: none;
+        /* 3) hide to screen-readers */
+        visibility: hidden;
+
+
+    }
+    
+    .nav-open .main-nav{
+        opacity: 1;
+        transform: translateX(0);
+        pointer-events: auto;
+        visibility: visible;
+    }
+
+    .main-nav-list{
+        gap: 4.8rem;
+        flex-direction: column;
+    }
+
+    .nav-open .menu-close{
+        display: block;
+    }
+
+    .nav-open .menu-open{
+        display: none;
+    }
+
+    .main-nav-link:link,
+    .main-nav-link:visited{
+        font-size: 3rem;
+        border-radius: 9px;
+        padding: 1.2rem 2.4rem;
+    }
 }
