@@ -229,4 +229,92 @@ Instead, 1rem = 1em = 16px*/
             grid-column: span 2;
         }
     }
+
+     /*******************************/
+    /* BELOW 544px */
+    /*******************************/
+
+    @media(max-width: 34em) {
+
+        .grid{
+            row-gap: 4.8rem;
+        }
+
+        .grid--3cols,
+        .grid--4cols,
+        .grid--2cols{
+            grid-template-columns: 1fr;
+        }
+
+        .btn,
+        .btn:link,
+        .btn:visited{
+            padding: 2.4rem;
+        }
+
+        .section-hero{
+            padding: 2.4rem 0 6.4rem 0;
+        }
+
+        .hero-container{
+            padding: 0 3.2rem;
+        }
+
+        .hero-img{
+            width: 80%;
+        }
+        
+        .logos img{
+            height: 1.2rem;
+        }
+
+        .ste-img-box{
+            transform: translateY(2.4rem);
+
+        }
+
+        .step-img-box:nth-child(2){
+            grid-row: 1;
+        }
+
+        .step-img-box:nth-child(6){
+            grid-row: 5;
+        }
+
+        .step-img-box:nth-child(odd){
+            rotate: 0deg;
+        }
+        
+        .step-img-box:nth-child(even){
+            rotate: 0deg;
+        }
+
+        .testimonials{
+            grid-template-columns: 1fr;
+        }
+
+        .gallery{
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.2rem;
+        }
+
+        .cta{
+            grid-template-columns: 1fr;
+        }
+
+        .cta-text-box{
+            padding: 3.2px;
+        }
+
+        .cta-img-box{
+            height: 32rem;
+            grid-row: 1;
+        }
+
+        .section-meals{
+            padding-top: 0 6.4rem;
+        }
+    }
+
+          
 }
