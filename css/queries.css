@@ -6,16 +6,16 @@ Instead, 1rem = 1em = 16px*/
 /* BELOW 1344px */
 /*******************************/
 
-@media(max-width: 84em){
-    .hero-container{
+@media(max-width: 84em) {
+    .hero-container {
         max-width: 120rem;
     }
-    
-    .heading-primary{
-        font-size: 3.2rem;   
+
+    .heading-primary {
+        font-size: 3.2rem;
     }
 
-    .gallery{
+    .gallery {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -25,40 +25,40 @@ Instead, 1rem = 1em = 16px*/
 /* BELOW 1200px */
 /*******************************/
 
-@media(max-width: 75em){
+@media(max-width: 75em) {
 
-    html{
+    html {
         font-size: 56.25%;
     }
 
-    .heading-secondary{
+    .heading-secondary {
         font-size: 3.2rem;
     }
 
-    .grid{
+    .grid {
         column-gap: 4.8rem;
         row-gap: 6.4rem;
     }
 
-    .header{
+    .header {
         padding: 0 3.2rem;
         gap: 4.8rem;
         height: 9.6rem;
     }
 
-    .main-nav-list{
+    .main-nav-list {
         gap: 2rem;
     }
 
-    .logos img{
+    .logos img {
         max-height: 3.2rem;
     }
 
-    .testimonials-container{
+    .testimonials-container {
         padding: 9.6rem 3.2rem;
     }
 
-    .gallery{
+    .gallery {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -68,9 +68,9 @@ Instead, 1rem = 1em = 16px*/
 /* BELOW 944px */
 /*******************************/
 
-@media(max-width: 59em){
+@media(max-width: 59em) {
 
-    html{
+    html {
         font-size: 50%;
     }
 
@@ -79,64 +79,65 @@ Instead, 1rem = 1em = 16px*/
         grid-template-columns: 1fr;
         padding: 0 9.6rem;
         gap: 6.4rem;
-    
+
     }
 
     .hero-text-box,
-    .hero-image-box{
+    .hero-image-box {
         text-align: center;
     }
 
-    .delivered-meals{
+    .delivered-meals {
         justify-content: center;
         margin-top: 3.2rem;
     }
 
-    .hero-img{
-        width: 60%;;
+    .hero-img {
+        width: 60%;
+        ;
     }
 
-    .logos img{
+    .logos img {
         max-height: 2.4rem;
     }
 
-    .step-number{
+    .step-number {
         font-size: 6.4rem;
     }
 
-    .section-testimonials{
+    .section-testimonials {
         grid-template-columns: 1fr;
 
     }
 
-    .gallery{
+    .gallery {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         gap: 1.6rem;
     }
 
-    .cta{
+    .cta {
         grid-template-columns: 3fr 2fr;
     }
 
-    .cta-form{
+    .cta-form {
         grid-template-columns: 1fr;
     }
 
-    .btn--form{
+    .btn--form {
         margin-top: 1.2rem;
     }
 
-    .footer{
+    .footer {
         padding: 8rem 0;
     }
 
-    
-    .btn-mobile-nav{
+
+    .btn-mobile-nav {
         display: block;
     }
 
-    .main-nav{
+    .main-nav {
         background-color: rgba(255, 255, 255, 0.95);
         position: absolute;
         top: 0%;
@@ -162,31 +163,70 @@ Instead, 1rem = 1em = 16px*/
 
 
     }
-    
-    .nav-open .main-nav{
+
+    .nav-open .main-nav {
         opacity: 1;
         transform: translateX(0);
         pointer-events: auto;
         visibility: visible;
     }
 
-    .main-nav-list{
+    .main-nav-list {
         gap: 4.8rem;
         flex-direction: column;
     }
 
-    .nav-open .menu-close{
+    .nav-open .menu-close {
         display: block;
     }
 
-    .nav-open .menu-open{
+    .nav-open .menu-open {
         display: none;
     }
 
     .main-nav-link:link,
-    .main-nav-link:visited{
+    .main-nav-link:visited {
         font-size: 3rem;
         border-radius: 9px;
         padding: 1.2rem 2.4rem;
+    }
+
+    /*******************************/
+    /* BELOW 704px */
+    /*******************************/
+
+    @media(max-width: 44em) {
+        .grid--3cols,
+        .grid--4cols{
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .diets{
+            grid-column: 1/-1;
+            justify-self: center;
+        }
+
+        .heading-secondary{
+            margin-bottom: 4.8rem;
+        }
+        
+        .pricing-plan{
+            width: 100%;
+        }
+
+        .grid--footer{
+            grid-template-columns: repeat(6, 1fr);
+        }
+        
+
+        .logo-col,
+        .address-col{
+            grid-column: span 3;
+        }
+
+        .nav-col{
+            grid-row: 1;
+            grid-column: span 2;
+        }
     }
 }
