@@ -5,17 +5,43 @@ yearQuery.textContent = currentYear;
 
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
-const mainNavLink = document.querySelector("a:link")
-
+const mainNavLink = document.querySelectorAll(".main-nav-link")
+console.log(mainNavLink)
 btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 })
 
-mainNavLink.addEventListener("click", function () {
-  if(headerEl.classList.contains("nav-open")){
-    headerEl.classList.toggle("nav-open");
+mainNavLink.forEach(function (link) {
+  link.addEventListener("click", function () {
+    if (headerEl.classList.contains("nav-open")) {
+      headerEl.classList.toggle("nav-open");
+    }
+  })
+}
+);
+
+
+const sectionHeroEl = document.querySelector(".section-hero")
+
+const obs = new IntersectionObserver(function(entries){
+  const ent = entries[0]
+
+  if(!ent.isIntersecting){
+     document.body.classList.add("sticky")
+  } 
+  
+  if(ent.isIntersecting) {
+    document.body.classList.remove("sticky")
   }
+}, {
+  root: null,
+  threshold: 0,
+  rootMargin: "-80px"
 })
+obs.observe(sectionHeroEl)
+
+
+
 
 // smooth scrolling to edge/safari early versions
 // const allLinks = document.querySelectorAll('a:link');
