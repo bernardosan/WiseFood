@@ -65,6 +65,9 @@ Medium: 11px
 
 html{
     font-size: 62.5%;
+
+    /* may not work in some versions of edge and safari */
+    scroll-behavior: smooth; 
 }
 
 body{
@@ -72,8 +75,6 @@ body{
     line-height: 1;
     font-weight: 400;
     color: #555;
-
-
     overflow-x: hidden;
 }
 

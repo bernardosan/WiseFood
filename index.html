@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/queries.css" />
     <link rel />
-
+    
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
     <script defer src="js/script.js"></script>
 </head>
 
@@ -23,11 +24,11 @@
         </a>
         <nav class="main-nav">
             <ul class="main-nav-list">
-                <li><a class="main-nav-link" href="#">How it works</a></li>
-                <li><a class="main-nav-link" href="#">Meals</a></li>
-                <li><a class="main-nav-link" href="#">Testimonials</a></li>
-                <li><a class="main-nav-link" href="#">Pricing</a></li>
-                <li><a class="main-nav-link nav-cta" href="#">Try for free</a></li>
+                <li><a class="main-nav-link" href="#how">How it works</a></li>
+                <li><a class="main-nav-link" href="#meals">Meals</a></li>
+                <li><a class="main-nav-link" href="#testimonials">Testimonials</a></li>
+                <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
+                <li><a class="main-nav-link nav-cta" href="#cta">Try for free</a></li>
                 
             
             </ul>
@@ -43,7 +44,7 @@
     </header>
 
     <main>
-        <section class="section-hero">
+        <section class="section-hero" id="hero">
             <div class="hero-container">
                 <div class="hero-text-box">
                     <div class="heading-primary">
@@ -54,8 +55,8 @@
                         make you eat healthy again. Tailored to your
                         personal tastes and nutritional needs.
                     </p>
-                    <a href="#" class="btn btn--full margin-right-sm">Start eating well</a>
-                    <a href="#" class="btn btn--outline">Learn more &darr;</a>
+                    <a href="#cta" class="btn btn--full margin-right-sm">Start eating well</a>
+                    <a href="#how" class="btn btn--outline">Learn more &darr;</a>
                     <div class="delivered-meals">
                         <div class="delivered-imgs">
                             <img src="img/customers/customer-1.jpg" alt="Customer photo" />
@@ -78,7 +79,7 @@
         </section>
 
 
-        <section class="section-featured">
+        <section class="section-featured" id="feature">
             <div class="container">
                 <h2 class="heading-featured-in"> As featured in</h2>
                 <div class="logos">
@@ -91,7 +92,7 @@
             </div>
         </section>
 
-        <section class="section-how container">
+        <section class="section-how container" id="how">
             <div class="container">
                 <span class="subheading">How it works</span>
                 <h2 class="heading-secondary">Your daily dose of health in 3 simple steps</h2>
@@ -145,7 +146,7 @@
             </div>
         </section>
 
-        <section class="section-meals">
+        <section class="section-meals" id="meals">
             <div class="container">
 
                 <span class="subheading">Meals</span>
@@ -250,7 +251,7 @@
             </div>
         </section>
 
-        <section class="section-testimonials">
+        <section class="section-testimonials"  id="testimonials">
 
             <div class="testimonials-container">
 
@@ -338,7 +339,7 @@
             </div>
         </section>
 
-        <section class="section-pricing">
+        <section class="section-pricing" id="pricing">
             <div class="container">
                 <span class="subheading">
                     Pricing
@@ -376,7 +377,7 @@
                         </li>
                     </ul>
                     <div class="plan-sign-up">
-                        <a href="#" class="btn btn--full margin-right-sm">Start eating well</a>
+                        <a href="#cta" class="btn btn--full margin-right-sm">Start eating well</a>
                     </div>
                 </div>
                 <div class="pricing-plan pricing-plan--complete">
@@ -405,7 +406,7 @@
                         </li>
                     </ul>
                     <div class="plan-sign-up">
-                        <a href="#" class="btn btn--full margin-right-sm">Start eating well</a>
+                        <a href="#cta" class="btn btn--full margin-right-sm">Start eating well</a>
                     </div>
                 </div>
             </div>
@@ -457,7 +458,7 @@
             </div>
         </section>
 
-        <section class="section-cta">
+        <section class="section-cta" id="cta">
             <div class="container">
                 <div class="cta">
                     <div class="cta-text-box">

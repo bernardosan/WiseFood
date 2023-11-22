@@ -5,10 +5,36 @@ yearQuery.textContent = currentYear;
 
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
+const mainNavLink = document.querySelector("a:link")
 
-btnNavEl.addEventListener("click", function(){
+btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 })
+
+mainNavLink.addEventListener("click", function () {
+  if(headerEl.classList.contains("nav-open")){
+    headerEl.classList.toggle("nav-open");
+  }
+})
+
+// smooth scrolling to edge/safari early versions
+// const allLinks = document.querySelectorAll('a:link');
+
+// allLinks.forEach(function (link) {
+//   link.addEventListener('click', function (e) {
+//     e.preventDefault
+//     const href = link.getAttribute("href");
+
+//     // scroll back to top
+//     if (href === "#")
+//       window.scrollto({ top: 0, behavior: "smooth" });
+
+//     if (href !== "#" && href.startsWith("#")){
+//       const sectionEl = document.querySelector(href);
+//       sectionEl.scrollIntoView({behavior: "smooth"});
+//     }
+//   });
+// });
 
 // ///////////////////////////////////////////////////////////
 // // Fixing flexbox gap property missing in some Safari versions
