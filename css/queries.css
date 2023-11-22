@@ -135,6 +135,7 @@ Instead, 1rem = 1em = 16px*/
 
     .btn-mobile-nav {
         display: block;
+        z-index: 999;
     }
 
     .main-nav {
@@ -151,7 +152,6 @@ Instead, 1rem = 1em = 16px*/
         justify-content: center;
         transform: translateX(100%);
         transition: all 0.5s ease-in;
-
         /* Hide navigation  */
         /* only display: none dont allow transions */
         /* 1) hide visually*/
@@ -165,8 +165,9 @@ Instead, 1rem = 1em = 16px*/
     }
 
     .nav-open .main-nav {
+        
         opacity: 1;
-        transform: translateX(0);
+transform: translateX(0);
         pointer-events: auto;
         visibility: visible;
     }
