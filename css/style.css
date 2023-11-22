@@ -12,6 +12,7 @@
     position: relative;
     transition: all 0.5s;
 
+    overflow-x: hidden;
     background-color: #fdf2e9;
 
     height: 9.6rem;
