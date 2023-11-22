@@ -143,14 +143,13 @@ Instead, 1rem = 1em = 16px*/
         position: absolute;
         top: 0%;
         left: 0%;
-        width: 100%;
+        width: 0%;
         height: 100vh;
 
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        transform: translateX(100%);
         transition: all 0.5s ease-in;
         /* Hide navigation  */
         /* only display: none dont allow transions */
@@ -167,7 +166,7 @@ Instead, 1rem = 1em = 16px*/
     .nav-open .main-nav {
         
         opacity: 1;
-transform: translateX(0);
+        width: 100%;
         pointer-events: auto;
         visibility: visible;
     }
