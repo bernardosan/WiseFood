@@ -76,6 +76,7 @@ body{
     font-weight: 400;
     color: #555;
     overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
 }
 
 strong{
