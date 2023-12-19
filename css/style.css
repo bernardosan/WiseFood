@@ -148,6 +148,7 @@
 
 .hero-img {
     width: 100%;
+    animation: sizedecrease 0.5s;
 }
 
 
@@ -211,12 +212,20 @@
 .logos{
     display: flex;
     justify-content: space-around;
+    animation: fadein 0.5s;
 }
 
 .logos img{
     max-height: 3.2rem;
     filter: brightness(0);
     opacity: 50%;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.logos img:hover{
+    scale: 1.1;
+    opacity: 80%;
 }
 
 /*******************************/
@@ -239,10 +248,12 @@
 }
 
 .step-img-box:nth-child(odd){
+    animation: rotate-odd 0.5s;
     rotate: -10deg;
 }
 
 .step-img-box:nth-child(even){
+    animation: rotate-even 0.5s;
     rotate: 10deg;
 }
 
