@@ -83,6 +83,11 @@ strong{
     font-weight: 700;
 }
 
+section{
+    animation: fadein 0.5s ease-in 
+}
+
+
 /*******************************/
 /* GENERAL COMPONENTS */
 /*******************************/
@@ -93,6 +98,7 @@ strong{
     font-weight: 700;
     color:#333;
     letter-spacing: -0.5px;
+    animation: fadein 0.5s;
 }
 
 .heading-primary{
@@ -271,5 +277,4 @@ strong{
 .grid--4cols{
     grid-template-columns: repeat(4, 1fr);
 }
-
 

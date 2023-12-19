@@ -2,6 +2,11 @@
 Instead, 1rem = 1em = 16px*/
 
 
+@keyframes fadein {
+    from { opacity: 0; transform: translateY(8rem); }
+    to { opacity: 1; transform: translateY(0rem);}
+}
+
 /*******************************/
 /* BELOW 1344px */
 /*******************************/
@@ -315,6 +320,5 @@ Instead, 1rem = 1em = 16px*/
             padding-top: 0 6.4rem;
         }
     }
-
           
 }
