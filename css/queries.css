@@ -7,6 +7,22 @@ Instead, 1rem = 1em = 16px*/
     to { opacity: 1; transform: translateY(0rem);}
 }
 
+@keyframes sizedecrease {
+    from { scale: 1.1; }
+    to { scale: 1; }
+}
+
+@keyframes rotate-odd {
+    from { rotate: 0deg}
+    to { rotate: -10deg }
+}
+
+@keyframes rotate-even {
+    from { rotate: 0deg}
+    to { rotate: 10deg }
+}
+
+
 /*******************************/
 /* BELOW 1344px */
 /*******************************/
